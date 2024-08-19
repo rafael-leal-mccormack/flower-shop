@@ -1,3 +1,4 @@
+"use client"
 import { useTranslations } from "next-intl";
 import { TestimonialList } from "../lib/testimonial-list";
 import Testimonial from "./testimonial";
@@ -8,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function TestimonyCarousel() {
   const t = useTranslations("Home")
@@ -18,6 +20,11 @@ export default function TestimonyCarousel() {
         opts={{
           loop: true,
         }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
       >
         <CarouselContent>
           {TestimonialList.map((review) => {

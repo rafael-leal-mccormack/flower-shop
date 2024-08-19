@@ -13,11 +13,9 @@ export default function LandingPage() {
           {t("title")}
         </h2>
 
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          {t("desc")}
-        </p>
+        <p className="mt-6 text-lg leading-8 text-gray-600">{t("desc")}</p>
 
-        <Link className="pb-6 sm:pb-12"  href={"/contact"}>
+        <Link className="pb-6 sm:pb-12" href={"/contact"}>
           <button className="m-4 border border-gray-400 rounded-2xl p-2">
             {t("contact")}
           </button>
@@ -29,9 +27,7 @@ export default function LandingPage() {
       <AnimatedSection>
         <TestimonyCarousel></TestimonyCarousel>
       </AnimatedSection>
-      <AnimatedSection>
-        <Footer></Footer>
-      </AnimatedSection>
+      <Footer></Footer>
     </>
   );
 }
