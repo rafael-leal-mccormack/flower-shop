@@ -3,6 +3,7 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import LandingLayout from "../components/layout";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Ajete Flower shop",
@@ -34,6 +35,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <LandingLayout>{children}</LandingLayout>
         </NextIntlClientProvider>
+        <Analytics/>
       </body>
     </html>
   );
