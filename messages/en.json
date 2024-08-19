@@ -1,0 +1,26 @@
+{
+  "Home": {
+    "company": "Gianni's flowers",
+    "title": "Fast, beautiful flowers and set up at a great cost!",
+    "desc": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+    "contact": "Contact us",
+    "reviews": "Reviews"
+  },
+  "Contact": {
+    "title": "Contact us",
+    "desc": "Please leave any information that will help us assist you better!",
+    "required": "* = required",
+    "firstname": "First name",
+    "lastname": "Last name",
+    "email": "Email",
+    "company": "Company (if applicable)",
+    "phone": "Phone number",
+    "message": "Message",
+    "submit": "Let's talk"
+  },
+  "Language": {
+    "en": "English",
+    "es": "Spanish",
+    "lang": "Language"
+  }
+}

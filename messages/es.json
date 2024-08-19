@@ -1,0 +1,26 @@
+{
+  "Home": {
+    "company": "Gianni's flores",
+    "title": "¡Flores hermosas y rápidas y montaje a un costo excelente!",
+    "desc": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+    "contact": "Contacta con nosotras",
+    "reviews": "Reseñas"
+  },
+  "Contact": {
+    "title": "Contacta con nosotras",
+    "desc": "¡Deje cualquier información que nos ayude a ayudarle mejor!",
+    "required": "* = requerido",
+    "firstname": "Nombre de pila",
+    "lastname": "Apellido",
+    "email": "Correo electrónico",
+    "company": "Empresa (si corresponde)",
+    "phone": "Número de teléfono",
+    "message": "Mensaje",
+    "submit": "Hablemos"
+  },
+  "Language": {
+    "en": "Ingles",
+    "es": "Español",
+    "lang": "Idioma"
+  }
+}

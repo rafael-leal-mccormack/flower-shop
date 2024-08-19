@@ -24,7 +24,7 @@ export default function AnimatedSection({image, float, children}: {image?: Stati
         },
       }}
       viewport={{ once: true }}
-      className={`h-screen w-full relative`}
+      className={`h-fit w-full relative flex flex-col items-center`}
     >
       {children}
       {image ? <Image className={`${float ? 'sm:absolute sm:right-0 sm:top-0 sm:opacity-[50%]' : ''}`} src={image} alt="flowers"></Image> : ""}

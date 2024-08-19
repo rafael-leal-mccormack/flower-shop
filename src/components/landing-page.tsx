@@ -1,21 +1,37 @@
 import AnimatedSection from "./animated-section";
-import Image1 from "../../public/flowers1.jpg";
-import Image2 from "../../public/flowers2.jpg";
-import Image3 from "../../public/flowers3.jpg";
-import Image4 from "../../public/facebook-Linked_Image___Emily+Clack+Photography.jpg";
+import Link from "next/link";
+import Gallery from "./gallery";
+import Footer from "./footers";
+import TestimonyCarousel from "./testimonial-carousel";
+import { useTranslations } from "next-intl";
 export default function LandingPage() {
+  const t = useTranslations("Home");
   return (
     <>
-      <AnimatedSection float image={Image1}>
-        <h2 className="m-4 sm:max-w-64 sm:z-10 relative font-medium">
-          Fast, beautiful flowers and set up at a great cost!
+      <AnimatedSection>
+        <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          {t("title")}
         </h2>
 
-        <button className="m-4 border border-gray-400 rounded-2xl p-2">Contact us</button>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          {t("desc")}
+        </p>
+
+        <Link className="pb-6 sm:pb-12"  href={"/contact"}>
+          <button className="m-4 border border-gray-400 rounded-2xl p-2">
+            {t("contact")}
+          </button>
+        </Link>
       </AnimatedSection>
-      <AnimatedSection image={Image2}></AnimatedSection>
-      <AnimatedSection image={Image3}></AnimatedSection>
-      <AnimatedSection image={Image4}></AnimatedSection>
+      <AnimatedSection>
+        <Gallery></Gallery>
+      </AnimatedSection>
+      <AnimatedSection>
+        <TestimonyCarousel></TestimonyCarousel>
+      </AnimatedSection>
+      <AnimatedSection>
+        <Footer></Footer>
+      </AnimatedSection>
     </>
   );
 }
