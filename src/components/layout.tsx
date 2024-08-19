@@ -21,7 +21,7 @@ export default function LandingLayout(props: PropsWithChildren) {
               <Image className="w-16 h-16" src={FlowerLogo} alt="Logo"></Image>
             </Link>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="lg:flex lg:gap-x-12">
             <LanguageSelect></LanguageSelect>
             {/* {navigation.map((item) => (
           <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
